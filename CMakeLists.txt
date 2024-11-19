@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+set(SRC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+add_executable(epoll-server ${SRC}/server.cpp)
+add_executable(epoll-client ${SRC}/client.cpp)
